@@ -1,0 +1,49 @@
+{
+    "manifest_version":2,
+    "name":"Amazon-price-drop-notification",
+    "version":"1.0",
+    "content_scripts":[
+        {
+            "matches":
+            [
+                "https://www.amazon.in/*",
+                "https://www.amazon.com/*"
+            ],
+            "js":[
+               
+                "./public/JS/jquery.js",
+                "./public/JS/content.js"
+            ]
+        }
+    ],
+    
+    "permissions":[
+        "activeTab",
+        "tabs",
+        "https://www.amazon.in/*",
+        "https://www.amazon.com/*"
+       
+        
+    ],
+    "background":{
+        "scripts":[
+            "./public/JS/jquery.js",
+            "./public/JS/background.js",
+            "newtab.js"
+        ]
+    },
+    "icons":{
+
+        "16":"./assets/amazon_icon_16.png",
+        "48":"./assets/amazon_icon_48.png",
+        "128":"./assets/amazon_icon_128.png"
+
+    },
+    "browser_action":{
+        "default_icon":"./assets/amazon_icon_16.png"
+    },
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com https://cdnjs.cloudflare.com; object-src 'self'"
+    
+
+
+}
