@@ -4,6 +4,6 @@ A Chrome Extension to scrape selected product prices off of the Amazon Web Store
 
 Technologies Used
 
-Angular - Front end extension logic and user interface.
-NodeJS - Backend business logic and communication between the front end and the database.
-MongoDB - A NoSQL database to store user and product info.
+    Angular - Front end extension logic and user interface.
+    NodeJS - Backend business logic and communication between the front end and the database.
+    MongoDB - A NoSQL database to store user and product info.
