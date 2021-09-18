@@ -1,4 +1,4 @@
-# Amazon-Price-Drop-Notifier
+# Amazon-Scrap-Extension
 
 A Chrome Extension to scrape selected product prices off of the Amazon Web Store and store them for any user and alert when there is a price drop.
 
